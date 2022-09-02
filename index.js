@@ -26,7 +26,12 @@ const showNews=(datas)=>{
     console.log(datas)
     const cardContainer=document.getElementById("card-container")
         cardContainer.textContent="";
+        const itemNum=document.getElementById("itemNum")
+        const item=document.getElementById("item")
+        item.classList.remove("hidden")
+        itemNum.innerText=`${datas.length} items found`
     datas.forEach(data=>{
+        
         console.log(data)
         const{image_url,author,rating,details,title,total_view}=data
         let card=document.createElement("div")
@@ -40,7 +45,7 @@ const showNews=(datas)=>{
           <img src="${author.img}" class="rounded-full h-16 w-16" alt="" srcset="">
           <div>
             <h2>${author.name? author.name:"Not found"}</h2>
-            <p>${author.published_date}</p>
+            <p>${author.published_date? author.published_date:"Not found"}</p>
           </div>
         </div>
         <div class="flex justify-evenly items-center">
