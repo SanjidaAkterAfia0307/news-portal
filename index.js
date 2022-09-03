@@ -7,8 +7,7 @@ const menuLoadData = () => {
 }
 const setMenu = (datas) => {
   const nav = document.getElementById("navbar")
-  const home = document.getElementById("home")
-  home.setAttribute("")
+  
   datas.forEach(data => {
     console.log(data)
     const li = document.createElement("li")
@@ -29,13 +28,20 @@ const loadNews = (id, name) => {
 
 const showNews = (datas, name) => {
   console.log(datas)
+  let totalView=[]
+  for(let data of datas){
+    totalView.push(data.total_view)
+  }
+  console.log(totalView)
   const cardContainer = document.getElementById("card-container")
   cardContainer.textContent = "";
   const itemNum = document.getElementById("itemNum")
   const item = document.getElementById("item")
   item.classList.remove("hidden")
   itemNum.innerText = `${datas.length} items found for category ${name}`
- 
+ datas=datas.sort(function(a,b){
+  return b.total_view - a.total_view
+ })
   datas.forEach(data => {
 
     
