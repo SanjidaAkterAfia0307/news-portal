@@ -19,13 +19,13 @@
     <header>
       <div class="navbar bg-base-100">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-4xl">News Hunt</a>
+          <a class="btn btn-ghost normal-case md:text-4xl text-2xl">News Hunt</a>
         </div>
         <div class="flex-none gap-2">
           <ul class="menu menu-horizontal bg-base-100 rounded-box">
             <li><a href="index.html">News</a></li>
             <li><a href="index2.html">Blog</a></li>
-            <li><a>About</a></li>
+            
           </ul>
           
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -39,12 +39,12 @@
     <div class="divider"></div>
 
     <main>
-        <h1 class="text-center text-6xl font-bold my-16">Some Important Questions</h1>
-        <section class="grid grid-cols-2 gap-10 mx-auto w-4/5">
-            <div class="hero min-h-screen bg-base-200">
+        <h1 class="text-center md:text-6xl text-3xl font-bold my-16">Some Important Questions</h1>
+        <section class="grid lg:grid-cols-2 grid-cols-1 gap-10 mx-auto w-4/5">
+            <div class="hero min-h-screen bg-base-200 rounded-2xl">
                 <div class="hero-content ">
                   <div class="max-w-md py-8">
-                    <h1 class="text-5xl font-semibold text-center">Difference between arrow function and regular function</h1>
+                    <h1 class="md:text-5xl text-2xl font-semibold text-center">Difference between arrow function and regular function</h1>
                     <p class="py-6 text-lg font-medium text-justify">this value inside a regular function is dynamic and depends on the invocation. But this inside the arrow function is bound lexically and equals to this of the outer function.
 
                       <br>  Arguments object inside the regular functions contains the list of arguments. The arrow function, on the opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest parameter ...args).
@@ -54,10 +54,10 @@
                   </div>
                 </div>
               </div>
-            <div class="hero min-h-screen bg-base-200">
+            <div class="hero min-h-screen bg-base-200 rounded-2xl">
                 <div class="hero-content text-center">
                   <div class="max-w-md py-8">
-                    <h1 class="text-5xl font-semibold text-center">Difference between .map() , .forEach() , .filter() , .find() method</h1>
+                    <h1 class="md:text-5xl text-2xl font-semibold text-center">Difference between .map() , .forEach() , .filter() , .find() method</h1>
                     <p class="py-6 text-lg font-medium text-justify"><b>.map() :</b> It executes the same code on every element in an array and returns a new array with the updated elements. Use it when you want to transform elements in an array.
                     <br><b>.forEach() :</b> It is used to execute the same code on every element in an array but does not change the array and it returns undefined.
                     <br><b>.filter() :</b> It checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. Use it when you want to select a subset of multiple elements from an array.
@@ -66,10 +66,10 @@
                   </div>
                 </div>
               </div>
-            <div class="hero min-h-screen bg-base-200">
+            <div class="hero min-h-screen bg-base-200 rounded-2xl">
                 <div class="hero-content ">
                   <div class="max-w-md py-8">
-                    <h1 class="text-5xl font-semibold text-center">Difference between var,let and const. </h1>
+                    <h1 class="md:text-5xl text-2xl font-semibold text-center">Difference between var,let and const. </h1>
                     <p class="py-6 text-lg font-medium text-justify">JavaScript has three variable declaration statements: var, let and const. The latter two were added in ES6, whereas var existed since previous versions. One of the first things to notice is that const defines constants (i.e. values that will not be reassigned), whereas var and let define variables. Yet, var behaves differently from both let and const in various other ways.The other differences among these three :</p>
                     <p class="py-6 text-lg font-medium text-justify">var is function-scoped while let and const are block-scoped.
                         var variables can be reassigned while let and const variables can not.
@@ -79,10 +79,10 @@
                   </div>
                 </div>
               </div>
-            <div class="hero min-h-screen bg-base-200">
+            <div class="hero min-h-screen bg-base-200 rounded-2xl">
                 <div class="hero-content text-center ">
                   <div class="max-w-md py-8">
-                    <h1 class="text-5xl font-semibold text-center">Advantages Of template strings</h1>
+                    <h1 class="md:text-5xl text-2xl font-semibold text-center">Advantages Of template strings</h1>
                     <p class="py-6 text-lg font-medium text-justify">Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags. Tags are functions that take a string and the decomposed parts of the string as parameters and are great for converting strings to different entities.
 
                         The syntax for creating template strings is by using backticks to delimit them.</p>

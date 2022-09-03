@@ -46,10 +46,10 @@ const showNews = (datas, name) => {
 
     
     console.log(data)
-    const { image_url, author, rating, details, title, total_view } = data
+    const { thumbnail_url, author, rating, details, title, total_view } = data
     let card = document.createElement("div")
     card.innerHTML = `<div class="card bg-base-100 shadow-xl">
-        <figure><img src="${image_url}" class="" alt="Movie"></figure>
+        <figure><img src="${thumbnail_url}" class="h-full" alt="Movie"></figure>
         <div class="card-body">
           <h2 class="card-title">${title.length>60? title.slice(0,60)+"...":title}</h2>
           <p>${details.length > 260 ? details.slice(0, 260) + "..." : details}</p>
@@ -64,7 +64,7 @@ const showNews = (datas, name) => {
             </div>
             <div class="flex justify-evenly items-center">
               <i class="fa-regular fa-eye"></i>
-              <p>${total_view ? total_view : "Not found"}</p>
+              <p>${total_view ? total_view : "Not view"}</p>
             </div>
             <div>
               <i class="fa-solid fa-star"></i>
