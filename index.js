@@ -39,9 +39,7 @@ const showNews = (datas, name) => {
   item.classList.remove("hidden")
   itemNum.innerText = `${datas.length} items found for category ${name}`
 
-    datas=datas.sort(function(a,b){
-      return b.total_view - a.total_view
-    })
+    datas=datas.sort((a,b)=>b.total_view - a.total_view)
   datas.forEach(data => {
 
     
