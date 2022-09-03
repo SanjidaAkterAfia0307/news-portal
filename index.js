@@ -1,3 +1,5 @@
+const cardContainer = document.getElementById("card-container")
+
 const menuLoadData = () => {
   let url = `https://openapi.programming-hero.com/api/news/categories`
   fetch(url)
@@ -18,6 +20,7 @@ const setMenu = (datas) => {
 
 const loadNews = (id, name) => {
   preLoader(true)
+  cardContainer.textContent = "";
   let url = `https://openapi.programming-hero.com/api/news/category/${id}`
   fetch(url)
     .then((res) => res.json())
@@ -29,8 +32,8 @@ const loadNews = (id, name) => {
 const showNews = (datas, name) => {
   console.log(datas)
   
-  const cardContainer = document.getElementById("card-container")
-  cardContainer.textContent = "";
+  
+  
   const itemNum = document.getElementById("itemNum")
   const item = document.getElementById("item")
   item.classList.remove("hidden")
